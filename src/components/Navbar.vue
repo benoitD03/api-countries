@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid mt-1">
+<div class=" navigation container-fluid p-4">
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link" href="#">Accueil</a>
@@ -24,5 +24,11 @@
 </template>
 
 <style scoped>
-
+.navigation {
+    background-color: #333;
+    
+}
+li a {
+    color: #f1f1f1;
+}
 </style>
