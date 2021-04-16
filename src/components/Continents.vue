@@ -3,7 +3,7 @@
         <h2 class="pb-5">Choisissez un continent</h2>
         <img src="../assets/the_world_is_mine.svg" style="max-width: 300px;" alt="globe">
         <div class="row justify-content-center mt-5">
-            <button type="button" class="btn btn-success btn-lg mr-4 ml-4"><i class="fas fa-globe-europe"></i>  Europe</button>
+            <router-link to="/Europe"><button type="button" class="btn btn-success btn-lg mr-4 ml-4"><i class="fas fa-globe-europe"></i>  Europe</button></router-link>
             <button type="button" class="btn btn-success btn-lg mr-4 ml-4"><i class="fas fa-globe-americas"></i>  Amériques</button>
             <button type="button" class="btn btn-success btn-lg mr-4 ml-4"><i class="fas fa-globe-africa"></i>  Afrique</button>
             <button type="button" class="btn btn-success btn-lg mr-4 ml-4"><i class="fas fa-globe-asia"></i>  Asie</button>

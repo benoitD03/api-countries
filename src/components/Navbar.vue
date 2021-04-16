@@ -2,10 +2,11 @@
 <div class=" navigation container-fluid p-4">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
+            <!-- <a class="nav-link" href="#">Accueil</a> -->
+            <router-link to="/" class="nav-link">Accueil</router-link>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Europe</a>
+            <router-link to="/Europe" class="nav-link">Europe</router-link>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Amériques</a>
