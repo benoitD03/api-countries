@@ -1,6 +1,7 @@
 <template>
 
     <div class="container">
+        <h1>Pays Européens</h1>
         <div class="row row-cols-1 row-cols-md-3">
             <carte v-for="(country, index) in pays" :key="index" :country="country" :id="index"></carte>
         </div>
@@ -33,5 +34,8 @@ export default {
 </script>
 
 <style scoped>
-
+h1 {
+    margin: 20px auto !important;
+    text-align: center;
+}
 </style>
