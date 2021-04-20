@@ -27,7 +27,7 @@ export default {
 #contenu {
     border-radius: 15px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    background: #cfefe9;
+    background: #b2e5db;
 }
 img {
     height: 150px;

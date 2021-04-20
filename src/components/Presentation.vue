@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid accueil">
         <div id="accueil" class="row p-5 justify-content-center">
-            <div class="col-12 col-md-6 pl-5">
+            <div id="image" class="col-12 col-md-6 pl-5">
                 <img src="../assets/undraw_world_9iqb.svg" style="max-width: 500px;" alt="carte du monde">
             </div>
             
@@ -22,5 +22,20 @@
 }
 h1, p {
     color: #f1f1f1;
+}
+@media all and (max-width: 1200px) {
+    #accueil {
+        display: block;
+        text-align: center;
+    }
+    img {
+        width: 300px;
+        margin:0;
+        padding-right: 20px;
+    }
+    #image {
+        margin: 20px auto;
+        padding: 0 !important;
+    }
 }
 </style>

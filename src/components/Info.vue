@@ -9,9 +9,9 @@
             <h2 class="mt-5 pt-5">Selectionnez une information</h2> 
         </div>
 
-        <div class="row pb-5 justify-content-center">
+        <div id="liste" class="row pb-5 justify-content-center">
             <div class="col-3">
-                <div class="list-group" id="list-tab" role="tablist">
+                <div class=" selection list-group" id="list-tab" role="tablist">
                 <a class="option list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Population</a>
                 <a class="option list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Capitale</a>
                 <a class="option list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Langue(s)</a>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-3 align-self-center">
-                <div class="tab-content" id="nav-tabContent">
+                <div class=" resultat tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Ce pays compte {{ paysSelect.population}} habitants.</div>
                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Sa capitale est {{ paysSelect.capital}}.</div>
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
@@ -83,5 +83,17 @@ img {
 }
 li {
     list-style-type: none;
+}
+@media all and (max-width: 1200px) {
+#liste {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+.selection, .resultat {
+    width: 300px ;
+    text-align: center; 
+    margin-top: 10px;
+}
 }
 </style>

@@ -25,8 +25,7 @@
 
 <style scoped>
 .navigation {
-    background-color: #333;
-    
+    background-color: #333;     
 }
 li a {
     color: #f1f1f1;
