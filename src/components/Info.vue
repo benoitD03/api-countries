@@ -3,7 +3,7 @@
     <div class="container-fluid contenu">
 
         <div class="text-center p-5">
-            <h1 class="pb-5">{{ paysSelect.name }}</h1>
+            <h1 class="pb-5">{{ paysSelect.translations.fr }}</h1>
             <img class="w-30 mb-5" :src="paysSelect.flag" alt="">   
             <hr>
             <h2 class="mt-5 pt-5">Selectionnez une information</h2> 
@@ -22,7 +22,12 @@
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Ce pays compte {{ paysSelect.population}} habitants.</div>
                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Sa capitale est {{ paysSelect.capital}}.</div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Le(s) langue(s) parlée(s) sont : {{ paysSelect.languages[0].nativeName}}</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        Langues :
+                        <ul class="pl-0" :key="index" v-for="(language, index) in paysSelect.languages">
+                            <li>{{ language.name }}</li>
+                        </ul>
+                    </div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">La superficie est de {{ paysSelect.area}} km²</div>
                 </div>
             </div>
@@ -75,5 +80,8 @@ export default {
 }
 img {
     width: 40%;
+}
+li {
+    list-style-type: none;
 }
 </style>

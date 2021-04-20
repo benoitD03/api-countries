@@ -5,7 +5,7 @@
         <div id="contenu" class="card m-4" style="width: 18rem; color:#333;" >
             <img class="card-img-top w-50 mt-3" :src="country.flag" alt="Card image cap">
             <div class="card-body text-center">
-                <h5 class="card-title titre">{{ country.name }}</h5>
+                <h5 class="card-title titre">{{ country.translations.fr }}</h5>
                 <router-link :to="`/${country.name}`">
                     <button class="btn"><i class="fas fa-question-circle"></i>  Informations sur ce pays</button>
                 </router-link>
@@ -38,5 +38,8 @@ button {
     background-color: #3ebfa6;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     margin: 10px auto !important;
+}
+button:hover {
+    background: #2f8f7d;
 }
 </style>
