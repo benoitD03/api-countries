@@ -8,7 +8,7 @@
             <router-link to="/Europe" class="nav-link">Europe</router-link>
         </li>
         <li class="nav-item">
-            <router-link to="/Ameriques" class="nav-link">Amériques</router-link>
+            <router-link to="/Ameriques" class="nav-link">Amérique</router-link>
         </li>
         <li class="nav-item">
             <router-link to="/Afrique" class="nav-link">Afrique</router-link>
