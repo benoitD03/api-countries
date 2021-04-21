@@ -19,6 +19,7 @@
 }
 button {
     background-color: #3ebfa6;
+    width: 200px;
 }
 @media all and (max-width: 1200px) {
 #boutons {
